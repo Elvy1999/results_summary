@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Hanken";
-  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
 }
 
 body {
