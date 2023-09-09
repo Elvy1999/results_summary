@@ -22,8 +22,12 @@ body {
 }
 
 .result_card {
-  width: 200px;
-  background-color: #4534f2;
+  width: 100px;
+  /* copied this from someones code, it creates a smooth transition of colors through the container */
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 0.8),
+    hsla(241, 72%, 46%, 0.934)
+  );
   border-radius: 15px;
   display: flex;
   flex-grow: 1;
@@ -34,7 +38,7 @@ body {
 }
 
 .summary_card {
-  min-width: 200px;
+  min-width: 100px;
   font-family: "Hanken";
   background-color: white;
   margin: 10px;
@@ -50,7 +54,7 @@ body {
 .circle {
   border-radius: 60%;
   padding: 50px 60px;
-  background-color: hsla(256, 72%, 46%, 1);
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0.1));
 }
 
 #result_average {
@@ -75,7 +79,7 @@ body {
 #info {
   font-family: "Hanken";
   font-size: 18px;
-  width: 25ch;
+  max-width: 50%;
   text-align: center;
   padding: 10px 20px;
   color: #c6c3ff;
